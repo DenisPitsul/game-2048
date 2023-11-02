@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>Main page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">Про мене</a>
+                    </li>
+                    <li class="image-item">
+                        <a href="#game-description" class="nav-link">Опис гри</a>
+                    </li>
+                    <li class="image-item">
+                        <a href="#gallery" class="nav-link">Галерея</a>
+                    </li>
+                    <li class="image-item">
+                        <a href="#game" class="nav-link">Міні-гра 2048</a>
+                    </li>
+                    <li class="image-item">
+                        <a href="#feetback-form" class="nav-link">Звязатия з нами</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about-me" class="about-me-section">
+        <div class="container">
+            <h2 class="title">Про мене</h2>
+            <p class="description">
+                Мене звати Денис, мені 24 і зараз я проходжу курс від Ciklum. А це моє практичне завдання.
+            </p>
+        </div>
+    </section>
+    <section id="game-description" class="game-description-section">
+        <div class="container">
+            <h2 class="title">Міні гра 2048</h2>
+            <p class="description">
+                Ігрове поле має форму квадрата 4x4. Необхідно переміщати та з'єднувати числа для отримання плитки номіналу «2048» (за бажанням можна продовжити далі).
+            </p>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="title">Галерея</h2>
+            <ul class="images-list">
+                <li class="image-item">
+                    <img class="image" src="./img/game-1.jpg" alt="game image 1">
+                </li>
+                <li class="image-item">
+                    <img class="image" src="./img/game-1.jpg" alt="game image 2">
+                </li>
+                <li class="image-item">
+                    <img class="image" src="./img/game-1.jpg" alt="game image 3">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="game" class="game-section">
+        <div class="container">
+            <div class="game-background">
+                <div class="new-game-btn-container">
+                    <button type="button" class="new-game-btn js-new-game-btn">Restart</button>
+                </div>
+                <div class="game-board">
+                    <div class="line">
+                        <div class="cell js-first-first">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-first-second">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-first-third">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-first-fourth">
+                            <p class="value"></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="cell js-second-first">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-second-second">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-second-third">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-second-fourth">
+                            <p class="value"></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="cell js-third-first">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-third-second">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-third-third">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-third-fourth">
+                            <p class="value"></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="cell js-fourth-first">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-fourth-second">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-fourth-third">
+                            <p class="value"></p>
+                        </div>
+                        <div class="cell js-fourth-fourth">
+                            <p class="value"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="game-btn js-left-btn">
+                        <svg class="game-btn-icon" width="" height="">
+                            <use href="./img/icons.svg#icon-left"></use>
+                        </svg>
+                    </button>
+                    <div class="top-bottom-buttons">
+                        <button type="button" class="game-btn js-top-btn">
+                            <svg class="game-btn-icon" width="" height="">
+                                <use href="./img/icons.svg#icon-top"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="game-btn js-bottom-btn">
+                            <svg class="game-btn-icon" width="" height="">
+                                <use href="./img/icons.svg#icon-bottom"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="button" class="game-btn js-rigth-btn">
+                        <svg class="game-btn-icon" width="" height="">
+                            <use href="./img/icons.svg#icon-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="score-container">
+                    <div class="score-board">
+                        <p class="score-text">Score: <span class="js-score-points">0</span></p>
+                    </div>
+                    <div class="score-board">
+                        <p class="score-text">Best: <span class="js-best-score-points">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feetback-form" class="feetback-form-section">
+        <div class="container">
+            <div class="review-form-container">
+                <h2 class="review-form-title">Форма зворотнього звязку</h2>
+                <form class="review-form">
+                    <div class="review-form-data">
+                        <label for="name" class="review-label">Ім'я:</label>
+                        <input type="text" required min="3" max="20" class="review-input" name="name" id="name">
+                    </div>
+                    <div class="review-form-data">
+                        <label for="email" class="review-label">Емаіл:</label>
+                        <input type="email" required class="review-input" name="email" id="email">
+                    </div>
+                    <div class="review-form-data">
+                        <label for="text" class="review-label">Повідомлення:</label>
+                        <textarea id="text" class="review-text-area" name="text"></textarea>
+                    </div>
+                    <div class="review-btn-container">
+                        <button type="submit" class="review-btn">Відправити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="backdrop js-win-lose-modal is-hidden">
+        <div class="win-lose-modal">
+            <button class="win-lose-close-btn js-win-lose-modal-close">
+                <svg class="win-lose-close-icon" width="32" height="32">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="win-lose-container">
+                <p class="win-lose-text js-win-lose-text">You won</p>
+                <p class="win-lose-score">Your score: 
+                    <span class="js-win-lose-score-points">0</span>
+                </p>
+                <p class="win-lose-score">Best score: 
+                    <span class="js-win-lose-best-score-points">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
