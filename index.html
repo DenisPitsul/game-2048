@@ -13,61 +13,6 @@
     <title>Main page</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#about-me" class="nav-link">Про мене</a>
-                    </li>
-                    <li class="image-item">
-                        <a href="#game-description" class="nav-link">Опис гри</a>
-                    </li>
-                    <li class="image-item">
-                        <a href="#gallery" class="nav-link">Галерея</a>
-                    </li>
-                    <li class="image-item">
-                        <a href="#game" class="nav-link">Міні-гра 2048</a>
-                    </li>
-                    <li class="image-item">
-                        <a href="#feetback-form" class="nav-link">Звязатия з нами</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about-me" class="about-me-section">
-        <div class="container">
-            <h2 class="title">Про мене</h2>
-            <p class="description">
-                Мене звати Денис, мені 24 і зараз я проходжу курс від Ciklum. А це моє практичне завдання.
-            </p>
-        </div>
-    </section>
-    <section id="game-description" class="game-description-section">
-        <div class="container">
-            <h2 class="title">Міні гра 2048</h2>
-            <p class="description">
-                Ігрове поле має форму квадрата 4x4. Необхідно переміщати та з'єднувати числа для отримання плитки номіналу «2048» (за бажанням можна продовжити далі).
-            </p>
-        </div>
-    </section>
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2 class="title">Галерея</h2>
-            <ul class="images-list">
-                <li class="image-item">
-                    <img class="image" src="./img/game-1.jpg" alt="game image 1">
-                </li>
-                <li class="image-item">
-                    <img class="image" src="./img/game-1.jpg" alt="game image 2">
-                </li>
-                <li class="image-item">
-                    <img class="image" src="./img/game-1.jpg" alt="game image 3">
-                </li>
-            </ul>
-        </div>
-    </section>
     <section id="game" class="game-section">
         <div class="container">
             <div class="game-background">
@@ -164,30 +109,6 @@
                         <p class="score-text">Best: <span class="js-best-score-points">0</span></p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="feetback-form" class="feetback-form-section">
-        <div class="container">
-            <div class="review-form-container">
-                <h2 class="review-form-title">Форма зворотнього звязку</h2>
-                <form class="review-form">
-                    <div class="review-form-data">
-                        <label for="name" class="review-label">Ім'я:</label>
-                        <input type="text" required min="3" max="20" class="review-input" name="name" id="name">
-                    </div>
-                    <div class="review-form-data">
-                        <label for="email" class="review-label">Емаіл:</label>
-                        <input type="email" required class="review-input" name="email" id="email">
-                    </div>
-                    <div class="review-form-data">
-                        <label for="text" class="review-label">Повідомлення:</label>
-                        <textarea id="text" class="review-text-area" name="text"></textarea>
-                    </div>
-                    <div class="review-btn-container">
-                        <button type="submit" class="review-btn">Відправити</button>
-                    </div>
-                </form>
             </div>
         </div>
     </section>

@@ -50,55 +50,9 @@ ul {
       max-width: 1440px;
     }
 }
-.header {
-    background-color: var(--background-color-dark);
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.navigation {
-}
-.nav-list {
-    display: flex;
-    gap: 25px;
-}
-.nav-item {
-}
-.nav-link {
-    color: var(--white-color);
-    font-size: 24px;
-}
-.image-item {
-}
-.about-me-section {
-}
-.title {
-    font-size: 32px;
-    margin-top: 50px;
-}
-.description {
-    font-size: 24px;
-    margin-top: 10px;
-}
-.game-description-section {
-}
-.gallery-section {
-}
-.gallery-section .title {
-    text-align: center;
-    margin-bottom: 24px;
-}
-.images-list {
-    display: flex;
-    gap: 48px;
-    justify-content: center;
-}
-.image-item {
-}
-.image {
-    width: 200px;
-}
 .game-section {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .game-background {
     margin: 0 auto;
@@ -215,76 +169,6 @@ ul {
 .score-text {
     color: var(--white-color);
     font-size: 18px;
-}
-
-.feetback-form-section {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.feetback-form-section .container {
-    display: flex;
-    justify-content: center;
-}
-.review-form-container {
-    width: 370px;
-    padding: 20px;
-    background-color: var(--background-color-medium);
-    border-radius: 20px;
-}
-.review-form-title {
-    text-align: center;
-    color: var(--background-color-dark);
-}
-.review-form {
-    margin-top: 25px;
-}
-.review-form-data {
-    display: flex;
-    flex-direction: column;
-}
-.review-label {
-    text-align: center;
-    margin-bottom: 5px;
-}
-.review-input {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.28px;
-    padding: 14px 18px;
-    border-radius: 8px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
-    margin-bottom: 14px;
-}
-.review-text-area {
-    width: 100%;
-    height: 91px;
-    resize: none;
-    font-size: 14px;
-    letter-spacing: -0.28px;
-    padding: 14px 18px;
-    border-radius: 8px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
-}
-.review-btn-container {
-    text-align: center;
-}
-.review-btn {
-    color: var(--white-color);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 10px;
-    background-color: var(--background-color-dark);
-    padding: 12px 28px;
-    border: none;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
 }
 
 /* MODAL */
